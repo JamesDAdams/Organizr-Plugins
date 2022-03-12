@@ -7,7 +7,7 @@ return array(
 	'STRIPE-enabled' => false,
 	'STRIPE-secret-key-api-prod-include' => '',
 	'STRIPE-Auth-include' => '1',
-	'STRIPE-menu-label-include' => 'Stripe client pannel',
+	'STRIPE-menu-label-include' => 'Stripe client panel',
 	'STRIPE-error-get-user-id-label-include' => 'You don\'t have a subscribe with stripe',
 	'STRIPE-error-get-user-id-time-include' => 1000
 );
