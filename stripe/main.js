@@ -24,10 +24,8 @@ function stripeLaunch(){
 }
 
 function getStripeUserId() {
-	console.log('CLICK');
 	let url = 'https://api.stripe.com/v1/customers?email='+ activeInfo.user.email;
 	let token = activeInfo.plugins.includes['STRIPE-secret-key-api-prod-include']
-	console.log('token :', token);
   
 	let h = new Headers();
 	h.append('Authorization', 'Bearer ' + token);
@@ -41,11 +39,9 @@ function getStripeUserId() {
 	  .then(resp => resp.json())
 	  .then(data => {
 		const userId = data['data'][0].id
-		console.log('user id: ' + userId);
 		redirectStripeClientPanel(userId, token, h)
 	   })
 		 .catch(err => {
-		   console.error('error :', err.message);
 		   messageSingle(
 				'',
 				activeInfo.plugins.includes['STRIPE-error-get-user-id-label-include'],
@@ -58,7 +54,6 @@ function getStripeUserId() {
 }
 
 function redirectStripeClientPanel(userId, token, h) {
-	console.log('CLICK1');
 	let url = 'https://api.stripe.com/v1/billing_portal/sessions?customer=' + userId
   
 	let req = new Request(url, {
@@ -69,10 +64,8 @@ function redirectStripeClientPanel(userId, token, h) {
 	fetch(req)
 	  .then(resp => resp.json())
 	  .then(data => {
-		console.log('data: ' + data.url);
 		window.location.replace(data.url);
 	   })
 		 .catch(err => {
-		   console.error(err.message);
 		 })
   }

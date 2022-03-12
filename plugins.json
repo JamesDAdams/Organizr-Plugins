@@ -1,22 +1,22 @@
 {
     "Stripe": {
       "repo": "https://github.com/Organizr/Organizr-Plugins",
-      "author": "CauseFX",
-      "category": "Testing",
-      "description": "This is a skeleton framework for an Organizr plugin - Please look at the file structure.",
-      "icon": "https://raw.githubusercontent.com/causefx/Organizr/v2-plugins/test/logo.png",
-      "contact": "causefx@organizr.app",
+      "author": "Enielka & JamesAdams",
+      "category": "Utilities",
+      "description": "This plugin add a client stripe pannel so that your users can manage their stripe subscription",
+      "icon": "https://raw.githubusercontent.com/JamesDAdams/Organizr-Plugins/master/stripe/logo.png",
+      "contact": "jamesadams@jamesadams.com",
       "website": "https://organizr.app",
-      "version": "1.0.0",
+      "version": "0.0.1",
       "minimum_organizr_version": "2.1.0",
-      "release_date": "2018-07-12",
-      "last_updated": "2021-06-14",
-      "github_folder": "test",
-      "project_folder": "test",
+      "release_date": "2022-03-12",
+      "last_updated": "2022-03-12",
+      "github_folder": "stripe",
+      "project_folder": "stripe",
       "license": "personal,business",
       "images": {
-        "Main": "https://assets.hongkiat.com/uploads/automated-php-test/tdd-example.jpg",
-        "Alternative": "https://i.stack.imgur.com/mCYvN.png"
+        "Main": "https://raw.githubusercontent.com/JamesDAdams/Organizr-Plugins/master/stripe/logo.png",
+        "Alternative": "https://raw.githubusercontent.com/JamesDAdams/Organizr-Plugins/master/stripe/logo.png"
       }
     }
   }

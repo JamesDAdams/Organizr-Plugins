@@ -2,7 +2,7 @@
 // PLUGIN INFORMATION
 $GLOBALS['plugins']['Stripe'] = array( // Plugin Name
 	'name' => 'Stripe', // Plugin Name
-	'author' => 'Enielka&JamesAdams', // Who wrote the plugin
+	'author' => 'Enielka & JamesAdams', // Who wrote the plugin
 	'category' => 'Utilities', // One to Two Word Description
 	'link' => '', // Link to plugin info
 	'license' => 'personal', // License Type use , for multiple
@@ -54,7 +54,7 @@ class StripePlugin extends Organizr
 				array(
 					'type' => 'select',
 					'name' => 'STRIPE-Auth-include',
-					'label' => 'Minimum Authentication for see stripe client pannel',
+					'label' => 'Minimum Authentication for see stripe client panel',
 					'value' => $this->config['STRIPE-Auth-include'],
 					'options' => $this->groupSelect()
 				)
@@ -79,6 +79,13 @@ class StripePlugin extends Organizr
 					'value' => $this->config['STRIPE-error-get-user-id-time-include']
 				),
 			),
+			'Notice' => array(
+				array(
+					'type' => 'html',
+					'label' => 'Notice',
+					'html' => '<span lang="en">After enabling for the first time, please reload the page - Menu is located under User menu on top right</span>'
+				)
+			)
 		);
 	}
 }
