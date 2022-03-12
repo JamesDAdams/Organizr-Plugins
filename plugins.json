@@ -1,0 +1,22 @@
+{
+    "Stripe": {
+      "repo": "https://github.com/Organizr/Organizr-Plugins",
+      "author": "CauseFX",
+      "category": "Testing",
+      "description": "This is a skeleton framework for an Organizr plugin - Please look at the file structure.",
+      "icon": "https://raw.githubusercontent.com/causefx/Organizr/v2-plugins/test/logo.png",
+      "contact": "causefx@organizr.app",
+      "website": "https://organizr.app",
+      "version": "1.0.0",
+      "minimum_organizr_version": "2.1.0",
+      "release_date": "2018-07-12",
+      "last_updated": "2021-06-14",
+      "github_folder": "test",
+      "project_folder": "test",
+      "license": "personal,business",
+      "images": {
+        "Main": "https://assets.hongkiat.com/uploads/automated-php-test/tdd-example.jpg",
+        "Alternative": "https://i.stack.imgur.com/mCYvN.png"
+      }
+    }
+  }
